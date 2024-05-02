@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Envio de Currículos - Paytour</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Adicione aqui links para CSS Bootstrap e outros que desejar -->
+</head>
+<body>
+    <div class="container">
+        <h1>Envie seu Currículo</h1>
+        <form id="formulario-curriculo" action="/submit" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="curriculo">Currículo (PDF, DOC):</label>
+                <input type="file" class="form-control-file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <!-- Adicione aqui scripts JavaScript, incluindo Bootstrap JS e outros que desejar -->
+</body>
+</html>
